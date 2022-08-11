@@ -13,15 +13,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { TodoItemComponent } from './pages/todo/todo-item/todo-item.component';
-import {MatListModule} from '@angular/material/list';
-import {MatButtonModule} from '@angular/material/button';
-import {MatIconModule} from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { DataBindingComponent } from './pages/data-binding/data-binding.component';
 import { ButtonComponent } from './components/button/button.component';
-//import { PipesExampleComponent } from './pages/pipes-example/pipes-example.component';
 import { UpperCasePipe } from '@angular/common';
 import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
-//import { PrintListPipe } from './print-list.pipe';
+import { PipesExempleComponent } from './pages/pipes-exemple/pipes-exemple.component';
+import { PrintListPipe } from './print-list.pipe';
 
 @NgModule({
   declarations: [
@@ -34,8 +34,8 @@ import { LifeCycleComponent } from './components/life-cycle/life-cycle.component
     DataBindingComponent,
     ButtonComponent,
     LifeCycleComponent,
-   // PipesExampleComponent,
-    //PrintListPipe,
+    PipesExempleComponent,
+    PrintListPipe,
   ],
   imports: [
     BrowserModule,

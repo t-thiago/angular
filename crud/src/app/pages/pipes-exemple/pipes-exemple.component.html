@@ -1,0 +1,74 @@
+<div class="form-group">
+    <label for="number">Number:</label>
+    <input type="text" [(ngModel)] = "number" class="form-control" id="number">
+    <button class="btn btn-success"(click)="mudaValor()">click</button>
+</div>
+
+<div class="">
+    <h1>_________________NUMEROS____________________</h1>
+    <p>Sem Formatação:</p>
+    <p>{{ number | number}}</p>
+    <h1>_____________________________________</h1>
+
+    <p>Com Formatação</p>
+    <p>{{ number | number:'2.0-1:pt' }}</p>
+    <h1>_____________________________________</h1>
+
+    <p>Resultado em moeda</p>
+    <p>{{ number | currency:'BRL' }}</p>
+    <h1>_____________________________________</h1>
+
+    <p>Resultado em moeda</p>
+    <p>{{ number | currency:'BRL' }}</p>
+    <h1>_____________________________________</h1>
+
+    <p>Resultado em porcentagem</p>
+    <p>{{ number | percent }}</p>
+    <h1>_____________________________________</h1>
+
+    
+    <h1>___________________TEXTOS__________________</h1>
+    <p>Uppercase</p>
+    <p>{{ text | uppercase }}</p>
+    <h1>_____________________________________</h1>
+    
+    <p>Lower Case</p>
+    <p>{{ text | titlecase }}</p>
+    <h1>_____________________________________</h1>
+    
+    <p>Slice</p>
+    <p>{{ text |slice:1:4 }}</p>
+    <h1>_____________________________________</h1>
+    
+    <p>Lower Case</p>
+    <p>{{ text | lowercase }}</p>
+    <h1>_____________________________________</h1>
+
+    <p>{{ pessoa | json}}</p>
+
+    <h1>___________________Datas__________________</h1>
+    <p>Data de Hoje</p>
+    <p>{{ date }} Sem Pipe</p>
+    <p>{{ date | date }}</p>
+    <p>{{ date | date: 'full' }}</p>
+    <p>{{ date | date: 'short' }}</p>
+    <p>{{ date | date: 'dd/MM/yyyy' : 'IST' : 'pt-BR'}}</p>
+
+    <h1>_____________________________________</h1>
+</div>
+<div class="container">
+    <div class="col">
+        <div class="row-6">
+            <div class="form-group">
+                <label for="">Print Pipe Test:</label>
+                <input type="text" name="text" id="text" #nome>
+                <button class="btn btn-primary" (click)="add(nome.value)">add</button>
+            </div>
+        </div>
+        <div class="row-6">
+            <h3>Lista FOrmatada</h3>
+            <p>Tamando da lista {{nomes.length}}</p>
+            <p>{{ nomes | printList }}</p>
+        </div>
+    </div>
+</div>
