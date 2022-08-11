@@ -1,0 +1,72 @@
+<nav class="navbar navbar-expand-lg" style="background-color: #FF9700;">
+    <div class="container" style="justify-content: center;">
+        <a routerLink="/" class="navbar-brand" style="color: #ffffff;"> Regra de Três</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse nav-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a routerLink="/" class="nav-link">Regra de Três</a>
+                </li>
+            </ul>
+          </div>
+    </div>
+</nav>
+
+<Section>
+    <div class="card w-100 my-6">
+        <div class="card-body">
+            <h3 class="card-title text-center">Resolve problemas que envolvem quatro valores, dos quais conhecemos três deles.</h3>
+            <form>
+                <div class="row my-4">
+                    <div class="col-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="{{valor1}}" placeholder="Se">
+                            <label for="nome">Se</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="{{valor2}}" placeholder="Equivale">
+                            <label for="equivale">Equivale</label>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row my-4">
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="{{valor3}}" placeholder="Entao">
+                                <label for="entao">Entao</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="{{resultado}}" placeholder="X">
+                                <label for="x">X</label>
+                            </div>
+                        </div>
+                    </div>  
+
+
+                        <div class="row my-5" style="justify-content: center;">
+                            <div class="col-2">
+                                <div class="form-group">
+
+                                    <div class="form-check my-5">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                        <label class="form-check-label" for="flexCheckIndeterminate">
+                                          Inversamente proporcional
+                                        </label>
+                                      </div>
+
+                                    <button type="button" class="btn btn-outline-success float-end">Calcular</button>
+                                    <button type="button" class="btn btn-outline-danger float-start">Limpar</button>
+                                </div>
+                            </div>
+                        </div>
+            </form>
+        </div> 
+    </div> 
+</Section>
