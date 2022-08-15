@@ -3,31 +3,28 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule} from '@angular/material/button';
-import {MatFormFieldModule} from '@angular/material/form-field';
 import { Regra3Component } from './components/regra3/regra3.component';
-import { HeaderComponent } from './components/header/header.component';
+import { HeaderComponent } from './components/shared/header/header.component';
+import { NavComponent } from './components/shared/nav/nav.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 import { FormsModule } from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
     Regra3Component,
-    HeaderComponent
+    HeaderComponent,
+    NavComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule,
-    MatFormFieldModule,
     FormsModule
   ],
-  providers: [{provide: MatFormFieldModule, useValue: {appearance: 'fill'}}],
+  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-
- }
+export class AppModule { }

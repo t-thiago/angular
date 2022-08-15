@@ -15,7 +15,7 @@
     </div>
 </nav>
 
-<Section>
+<Section> 
     <div class="card w-100 my-6">
         <div class="card-body">
             <h3 class="card-title text-center">Resolve problemas que envolvem quatro valores, dos quais conhecemos três deles.</h3>
@@ -23,13 +23,13 @@
                 <div class="row my-4">
                     <div class="col-6">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="{{valor1}}" placeholder="Se">
+                            <input type="number" class="form-control" placeholder="Valor 1" [(ngModel)] = "valor1" name="valor1">
                             <label for="nome">Se</label>
                         </div>
                     </div>
                     <div class="col-6">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="{{valor2}}" placeholder="Equivale">
+                            <input type="number" class="form-control" placeholder="Valor 2" [(ngModel)] = "valor2" name="valor2">
                             <label for="equivale">Equivale</label>
                         </div>
                     </div>
@@ -37,14 +37,14 @@
                     <div class="row my-4">
                         <div class="col-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="{{valor3}}" placeholder="Entao">
+                                <input type="number" class="form-control" id="" placeholder="Entao">
                                 <label for="entao">Entao</label>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="{{resultado}}" placeholder="X">
-                                <label for="x">X</label>
+                                <input type="number" class="form-control" id="" placeholder="valorTotal">
+                                <label for="x">{{valorTotal}}</label>
                             </div>
                         </div>
                     </div>  
@@ -61,7 +61,7 @@
                                         </label>
                                       </div>
 
-                                    <button type="button" class="btn btn-outline-success float-end">Calcular</button>
+                                    <button type="button" class="btn btn-outline-success float-end" (click) = "CalcularRegra3()">Calcular</button>
                                     <button type="button" class="btn btn-outline-danger float-start">Limpar</button>
                                 </div>
                             </div>

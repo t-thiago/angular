@@ -6,17 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./regra3.component.css']
 })
 export class Regra3Component implements OnInit {
-  valor1: any;
-  valor2: any;
-  valor3: any;
-  resultado: any;
+ valor1: number | undefined;
+ valor2: number | undefined;
+ valorTotal: number | undefined;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 CalcularRegra3(){
-this.resultado = this.valor1 + this.valor3/this.valor1;
+  return this.valorTotal = Number(this.valor1) + Number(this.valor2)
+  console.log(this.valorTotal)
 
 }
   

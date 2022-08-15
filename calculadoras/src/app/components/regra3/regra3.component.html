@@ -1,0 +1,48 @@
+    <div class="card w-100 my-4">
+        <div class="card-body">
+            <h3 class="card-title text-center">Resolve problemas que envolvem quatro valores, dos quais conhecemos três deles.</h3>
+            <form>
+                <div class="row my-4">
+                    <div class="col-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" placeholder="valor 1" [(ngModel)]="valor1" name="valor1">
+                            <label for="nome">Se</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" placeholder="valor 2" [(ngModel)]="valor2" name="valor2">
+                            <label for="equivale">Equivale</label>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row my-4">
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" placeholder="valor 3" [(ngModel)]="valor3" name="valor3">
+                                <label for="entao">Então</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" placeholder="resultado" disabled="">
+                                <label for="x">{{resultado}}</label>
+                            </div>
+                        </div>
+                    </div>  
+                    
+                    <div class="row my-5" style="text-align: center;">
+                        <div class="form-group">
+                            <div class="my-4">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" [(ngModel)]="checar" name="checar">
+                                <label class="form-check-label" for="flexCheckIndeterminate">
+                                    Inversamente proporcional
+                                </label> 
+                            </div>
+                                    <button type="button" class="btn btn-outline-success mx-3" (click)="calcular()">Calcular</button>
+                                    <button type="reset" class="btn btn-outline-danger" (click)="limpar()">Limpar</button>
+                                </div>
+                            </div>    
+            </form>
+        </div> 
+    </div> 
